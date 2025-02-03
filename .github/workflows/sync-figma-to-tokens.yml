@@ -16,31 +16,18 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up Deno
       uses: denoland/setup-deno@v2
       with:
         deno-version: v2.x
 
-    - name: Create .env File
-      run: |
-        echo "FIGMA_ACCESS_TOKEN=${{ secrets.FIGMA_ACCESS_TOKEN }}" > .env
-
     - name: Run Deno script
       env:
         FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
         FILE_KEY: ${{ github.event.inputs.file_key }}
       run: deno task start
-
-    - name: Create new branch
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git checkout -b sync-figma-branch
-        git add .
-        git commit -m "Sync Figma to Tokens"
-        git push origin sync-figma-branch
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v5
