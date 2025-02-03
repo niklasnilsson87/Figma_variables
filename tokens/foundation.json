@@ -1,0 +1,43 @@
+{
+  "color": {
+    "gray": {
+      "0": {
+        "$type": "color",
+        "$value": "#ffffff",
+        "$description": ""
+      },
+      "50": {
+        "$type": "color",
+        "$value": "#fafafa",
+        "$description": ""
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#000000",
+        "$description": ""
+      }
+    },
+    "pink": {
+      "50": {
+        "$type": "color",
+        "$value": "#f7e3ed",
+        "$description": ""
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#d43884",
+        "$description": ""
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#940e5c",
+        "$description": ""
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#6e0e50",
+        "$description": ""
+      }
+    }
+  }
+}

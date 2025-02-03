@@ -1,0 +1,11 @@
+{
+  "card": {
+    "background": {
+      "color": {
+        "$type": "color",
+        "$value": "{semantic.primary-surface}",
+        "$description": ""
+      }
+    }
+  }
+}
