@@ -10,9 +10,6 @@ on:
 jobs:
   sync-figma:
     runs-on: ubuntu-latest
-    env:
-      FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
-      FILE_KEY: ${{ github.event.inputs.file_key }}
     permissions:
       contents: write
       pull-requests: write
@@ -27,6 +24,9 @@ jobs:
         deno-version: v2.x
 
     - name: Run Deno script
+      env:
+        FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
+        FILE_KEY: ${{ github.event.inputs.file_key }}
       run: deno task start
 
     - name: Create new branch
