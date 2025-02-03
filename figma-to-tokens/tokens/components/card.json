@@ -5,6 +5,11 @@
         "$type": "color",
         "$value": "{semantic.primary-surface}",
         "$description": ""
+      },
+      "text-color": {
+        "$type": "color",
+        "$value": "{semantic.primary-text}",
+        "$description": ""
       }
     }
   }

@@ -55,7 +55,9 @@ function generateFileName(collectionName: string, modeName: string): string {
 }
 
 export async function writeTokensToJson(tokenFiles: any) {
-  const outputDir = 'tokens'
+  const currentWorkingDirectory = import.meta.dirname
+
+  const outputDir = `${currentWorkingDirectory}/tokens`
   const componentDir = `${outputDir}/components`
 
   await Deno.mkdir(outputDir, { recursive: true })
