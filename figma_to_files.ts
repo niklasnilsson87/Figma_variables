@@ -63,7 +63,6 @@ export async function writeTokensToJson(tokenFiles: any) {
 
   for await (const [fileName, fileContent] of Object.entries(tokenFiles)) {
     const isComponent = fileName.toLowerCase().startsWith('component')
-    console.log(fileName)
 
     if (isComponent) {
       for (
@@ -82,7 +81,6 @@ export async function writeTokensToJson(tokenFiles: any) {
       continue
     }
 
-    // Default behavior for non-components
     const filePath = `${outputDir}/${fileName}`
     await Deno.writeTextFile(filePath, JSON.stringify(fileContent, null, 2))
     console.log(`Wrote ${filePath}`)
