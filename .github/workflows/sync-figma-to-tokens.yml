@@ -1,0 +1,47 @@
+name: Sync Figma to Tokens
+
+on:
+  workflow_dispatch:
+    inputs:
+      file_key:
+        description: 'The file key of the Figma file to be updated'
+        required: true
+
+jobs:
+  sync-figma:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Deno
+      uses: denoland/setup-deno@v2
+      with:
+        deno-version: v2.x
+
+    - name: Run Deno script
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        FILE_KEY: ${{ github.event.inputs.file_key }}
+      run: deno task start
+
+    - name: Create new branch
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git checkout -b sync-figma-branch
+        git add .
+        git commit -m "Sync Figma to Tokens"
+        git push origin sync-figma-branch
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        commit-message: Update tokens from Figma
+        title: Update tokens from Figma
+        body: 'Update tokens from Figma from file: https://www.figma.com/file/${{ github.event.inputs.file_key }}'
+        branch: update-tokens
