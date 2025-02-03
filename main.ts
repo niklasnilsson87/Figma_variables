@@ -3,10 +3,14 @@ import 'jsr:@std/dotenv/load'
 import { getTokensFiles, writeTokensToJson } from './figma_to_files.ts'
 
 const FIGMA_ACCESS_TOKEN = Deno.env.get('FIGMA_ACCESS_TOKEN')
-const FILE_KEY = 'Ih8vkHRsEXTDPQ0aGkoSMS'
+const FILE_KEY = Deno.env.get('FILE_KEY')
 
 if (!FIGMA_ACCESS_TOKEN) {
   throw new Error('FIGMA_ACCESS_TOKEN environment variable is required')
+}
+
+if (!FILE_KEY) {
+  throw new Error('FILE_KEY environment variable is required')
 }
 
 try {
