@@ -19,6 +19,11 @@
       "$type": "color",
       "$value": "{color.gray.0}",
       "$description": ""
+    },
+    "primary-text": {
+      "$type": "color",
+      "$value": "{color.gray.900}",
+      "$description": ""
     }
   }
 }
