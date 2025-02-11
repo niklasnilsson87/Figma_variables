@@ -17,7 +17,12 @@
     },
     "text-on-primary": {
       "$type": "color",
-      "$value": "#ffffff",
+      "$value": "{color.gray.0}",
+      "$description": ""
+    },
+    "primary-text": {
+      "$type": "color",
+      "$value": "{color.gray.50}",
       "$description": ""
     }
   }
