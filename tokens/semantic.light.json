@@ -1,24 +1,35 @@
 {
   "semantic": {
-    "primary-surface": {
-      "$type": "color",
-      "$value": "{color.gray.50}",
-      "$description": ""
-    },
-    "primary-action": {
-      "$type": "color",
-      "$value": "{color.pink.900}",
-      "$description": ""
-    },
-    "primary-action-hover": {
-      "$type": "color",
-      "$value": "{color.pink.800}",
-      "$description": ""
-    },
-    "text-on-primary": {
-      "$type": "color",
-      "$value": "{color.gray.0}",
-      "$description": ""
+    "primary": {
+      "background": {
+        "default": {
+          "$type": "color",
+          "$value": "{color.gray.50}",
+          "$description": ""
+        },
+        "action": {
+          "$type": "color",
+          "$value": "{color.pink.900}",
+          "$description": ""
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{color.pink.800}",
+          "$description": ""
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{color.gray.50}",
+          "$description": ""
+        }
+      },
+      "text": {
+        "default": {
+          "$type": "color",
+          "$value": "{color.gray.900}",
+          "$description": ""
+        }
+      }
     }
   }
 }

@@ -3,7 +3,12 @@
     "background": {
       "color": {
         "$type": "color",
-        "$value": "{semantic.primary-surface}",
+        "$value": "{semantic.primary.background.default}",
+        "$description": ""
+      },
+      "text-color": {
+        "$type": "color",
+        "$value": "{semantic.primary.text.default}",
         "$description": ""
       }
     }

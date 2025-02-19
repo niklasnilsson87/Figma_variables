@@ -1,21 +1,32 @@
 {
   "button": {
-    "primary": {
+    "color": {
       "background": {
-        "$type": "color",
-        "$value": "{semantic.primary-action}",
-        "$description": ""
+        "primary": {
+          "hover": {
+            "$type": "color",
+            "$value": "{semantic.primary.background.hover}",
+            "$description": ""
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{semantic.primary.background.action}",
+            "$description": "this is the primary background color"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{semantic.primary.background.focus}",
+            "$description": ""
+          }
+        }
       },
-      "text-color": {
-        "$type": "color",
-        "$value": "{semantic.text-on-primary}",
-        "$description": ""
-      },
-      "hover": {
-        "background": {
-          "$type": "color",
-          "$value": "{semantic.primary-action-hover}",
-          "$description": ""
+      "text": {
+        "primary": {
+          "default": {
+            "$type": "color",
+            "$value": "{semantic.primary.text.default}",
+            "$description": ""
+          }
         }
       }
     }
