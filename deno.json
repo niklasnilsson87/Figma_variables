@@ -1,7 +1,8 @@
 {
   "tasks": {
     "start": "deno run --allow-net --allow-write --allow-read --env-file --allow-env main.ts",
-     "lint": "deno lint"
+    "start:token": "deno run --allow-sys --allow-read --allow-write --allow-env --allow-net --allow-run tokens_to_css.ts",
+    "lint": "deno lint"
   },
   "fmt": {
     "semiColons": false,

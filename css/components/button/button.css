@@ -1,0 +1,42 @@
+
+
+.button {
+  background-color: var(--_background);
+  color: var(--_foreground);
+  border-radius: var(--border-s);
+  border: var(--border-s) solid var(--_color-border);
+}
+
+.button--success {
+  --_color-border: var(--color-border-success);
+  --_foreground: var(--color-success);
+  --_background: var(--color-success-weak);
+}
+
+.button--error {
+  --_color-border: var(--color-border-error);
+  --_foreground: var(--color-error);
+  --_background: var(--color-error-weak);
+}
+
+.button--primary {
+    --_background: var(--color-surface-brand);
+    --_hover_bg: var(--color-surface-brand-hover);
+    --_foreground: var(--color-foreground-brand);
+    --_color-border: var(--color-border-brand);
+}
+
+.button--secondary {
+    --_background: var(--color-surface-secondary);
+    --_hover_bg: var(--color-surface-secondary-hover);
+    --_foreground: var(--color-foreground-secondary);
+    --_color-border: var(--color-border-secondary);
+}
+
+.button--primary:hover {
+    background-color: hotpink;
+}
+
+.button--secondary:hover {
+    background-color: goldenrod;
+}

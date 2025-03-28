@@ -1,11 +1,8 @@
 {
-  "button": {
+  "input": {
     "color": {
       "background": {
-        "primary": {
-          "$type": "color",
-          "$value": "{color.accent}",
-          "$description": "this is the primary background color",
+        "success": {
           "hover": {
             "$type": "color",
             "$value": "{color.accent.neutral}",
@@ -22,13 +19,10 @@
             "$description": ""
           }
         },
-        "secondary": {
-          "$type": "color",
-          "$value": "{color.background}",
-          "$description": "",
+        "danger": {
           "hover": {
             "$type": "color",
-            "$value": "{color.accent.weaker}",
+            "$value": "{color.status.danger.weak}",
             "$description": ""
           },
           "focus": {
@@ -38,9 +32,17 @@
           },
           "active": {
             "$type": "color",
-            "$value": "{color.background}",
+            "$value": "{color.border.danger}",
             "$description": ""
           }
+        },
+        "$type": "color",
+        "$value": "{color.surface}",
+        "$description": "",
+        "hover": {
+          "$type": "color",
+          "$value": "{color.surface.weak}",
+          "$description": ""
         }
       },
       "text": {
@@ -89,7 +91,9 @@
         "primary": {
           "$type": "color",
           "$value": "{color.border}",
-          "$description": "",
+          "$description": ""
+        },
+        "succes": {
           "hover": {
             "$type": "color",
             "$value": "{color.border.strong}",
@@ -101,13 +105,10 @@
             "$description": ""
           }
         },
-        "secondary": {
-          "$type": "color",
-          "$value": "{color.accent.neutral}",
-          "$description": "",
+        "danger": {
           "hover": {
             "$type": "color",
-            "$value": "{color.accent.strong}",
+            "$value": "{color.border.danger}",
             "$description": ""
           },
           "active": {

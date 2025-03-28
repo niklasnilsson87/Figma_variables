@@ -1,0 +1,40 @@
+@import url('button/index.css');
+
+:root {
+  --color-surface-brand: #2d31a6;
+  --color-surface-brand-hover: #2d31a7;
+
+  --color-foreground-brand: #ffffff;
+
+  --color-surface-secondary: #fafafa;
+  --color-surface-secondary-hover: #a4a7ae;
+
+  --color-foreground-brand: #ffffff;
+  --color-foreground-secondary: #ffffff;
+
+  --color-success: #079455;
+  --color-success-weak: #dcfae6;
+  --color-error: #d92d20;
+}
+
+:root[dark-theme] {
+  --color-surface-brand: #444ce7;
+  --color-surface-brand-hover: #2d31a8;
+
+  --color-foreground-brand: #ffffff;
+  
+  --color-surface-secondary: #22262f;
+  --color-surface-secondary-hover: #191c23;
+
+  --color-foreground-brand: #ffffff;
+  --color-foreground-secondary: #ffffff;
+
+  --color-success: #079455;
+  --color-success-weak: #dcfae6;
+  --color-error: #d92d20;
+}
+
+:root[wireframe-theme] {
+  --color-surface-brand: #00000;
+  --color-surface-brand-hover: #ffff;
+}

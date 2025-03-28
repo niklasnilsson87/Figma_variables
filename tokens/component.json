@@ -166,5 +166,174 @@
         }
       }
     }
+  },
+  "input": {
+    "color": {
+      "background": {
+        "success": {
+          "hover": {
+            "$type": "color",
+            "$value": "{color.accent.neutral}",
+            "$description": ""
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{color.accent.strong}",
+            "$description": ""
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.accent.strong}",
+            "$description": ""
+          }
+        },
+        "danger": {
+          "hover": {
+            "$type": "color",
+            "$value": "{color.status.danger.weak}",
+            "$description": ""
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{color.accent.weaker}",
+            "$description": ""
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.border.danger}",
+            "$description": ""
+          }
+        },
+        "$type": "color",
+        "$value": "{color.surface}",
+        "$description": "",
+        "hover": {
+          "$type": "color",
+          "$value": "{color.surface.weak}",
+          "$description": ""
+        }
+      },
+      "text": {
+        "primary": {
+          "$type": "color",
+          "$value": "{color.text.on-accent}",
+          "$description": "",
+          "hover": {
+            "$type": "color",
+            "$value": "{color.text.on-accent}",
+            "$description": ""
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.text.on-accent}",
+            "$description": ""
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{color.text.on-accent}",
+            "$description": ""
+          }
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": "{color.accent.neutral}",
+          "$description": "",
+          "hover": {
+            "$type": "color",
+            "$value": "{color.accent.neutral}",
+            "$description": ""
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{color.accent.neutral}",
+            "$description": ""
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.accent.neutral}",
+            "$description": ""
+          }
+        }
+      },
+      "border": {
+        "primary": {
+          "$type": "color",
+          "$value": "{color.border}",
+          "$description": ""
+        },
+        "succes": {
+          "hover": {
+            "$type": "color",
+            "$value": "{color.border.strong}",
+            "$description": ""
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.border.strong}",
+            "$description": ""
+          }
+        },
+        "danger": {
+          "hover": {
+            "$type": "color",
+            "$value": "{color.border.danger}",
+            "$description": ""
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.accent.stronger}",
+            "$description": ""
+          }
+        }
+      }
+    },
+    "padding": {
+      "small": {
+        "$type": "number",
+        "$value": "{spacing.1․5}",
+        "$description": ""
+      },
+      "medium": {
+        "$type": "number",
+        "$value": "{spacing.2}",
+        "$description": ""
+      },
+      "large": {
+        "$type": "number",
+        "$value": "{spacing.3}",
+        "$description": ""
+      }
+    },
+    "gutter": {
+      "small": {
+        "$type": "number",
+        "$value": "{spacing.2}",
+        "$description": ""
+      }
+    },
+    "border": {
+      "radius": {
+        "small": {
+          "$type": "number",
+          "$value": "{radius.1}",
+          "$description": ""
+        },
+        "medium": {
+          "$type": "number",
+          "$value": "{radius.1․5}",
+          "$description": ""
+        },
+        "large": {
+          "$type": "number",
+          "$value": "{radius.2}",
+          "$description": ""
+        },
+        "rounded": {
+          "$type": "number",
+          "$value": "{radius.full}",
+          "$description": ""
+        }
+      }
+    }
   }
 }

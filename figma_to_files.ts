@@ -47,7 +47,7 @@ export async function getTokensFiles(access_token: string, file_key: string) {
 }
 
 function generateFileName(collectionName: string, modeName: string): string {
-  if (!['light', 'dark'].includes(modeName)) {
+  if (!['light', 'dark', 'fancy', 'dirty'].includes(modeName)) {
     return `${collectionName}.json`
   }
 
@@ -63,7 +63,7 @@ export async function writeTokensToJson(tokenFiles: any) {
 
   for await (const [fileName, fileContent] of Object.entries(tokenFiles)) {
     const isComponent = fileName.toLowerCase().startsWith('component')
-
+    console.log(isComponent, fileName)
     if (isComponent) {
       for (
         const [componentName, componentData] of Object.entries(

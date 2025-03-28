@@ -1,34 +1,162 @@
 {
-  "semantic": {
-    "primary": {
-      "background": {
-        "default": {
+  "color": {
+    "accent": {
+      "$type": "color",
+      "$value": "{color.base.primary.500}",
+      "$description": "",
+      "neutral": {
+        "$type": "color",
+        "$value": "{color.base.primary.400}",
+        "$description": ""
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{color.base.primary.600}",
+        "$description": ""
+      },
+      "stronger": {
+        "$type": "color",
+        "$value": "{color.base.primary.700}",
+        "$description": ""
+      },
+      "weak": {
+        "$type": "color",
+        "$value": "{color.base.primary.300}",
+        "$description": ""
+      },
+      "weaker": {
+        "$type": "color",
+        "$value": "{color.base.primary.200}",
+        "$description": ""
+      }
+    },
+    "text": {
+      "neutral": {
+        "$type": "color",
+        "$value": "{color.neutral.900}",
+        "$description": ""
+      },
+      "weak": {
+        "$type": "color",
+        "$value": "{color.neutral.700}",
+        "$description": ""
+      },
+      "weaker": {
+        "$type": "color",
+        "$value": "{color.neutral.600}",
+        "$description": ""
+      },
+      "link": {
+        "$type": "color",
+        "$value": "{color.base.primary.500}",
+        "$description": ""
+      },
+      "danger": {
+        "$type": "color",
+        "$value": "{color.danger.700}",
+        "$description": ""
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{color.base.secondary.700}",
+        "$description": "",
+        "strong": {
           "$type": "color",
-          "$value": "{color.gray.50}",
-          "$description": ""
-        },
-        "action": {
-          "$type": "color",
-          "$value": "{color.pink.900}",
-          "$description": ""
-        },
-        "hover": {
-          "$type": "color",
-          "$value": "{color.pink.800}",
-          "$description": ""
-        },
-        "focus": {
-          "$type": "color",
-          "$value": "{color.gray.50}",
+          "$value": "{color.base.secondary.800}",
           "$description": ""
         }
       },
-      "text": {
-        "default": {
+      "success": {
+        "$type": "color",
+        "$value": "{color.success.700}",
+        "$description": "",
+        "strong": {
           "$type": "color",
-          "$value": "{color.gray.900}",
+          "$value": "{color.success.800}",
           "$description": ""
         }
+      },
+      "on-accent": {
+        "$type": "color",
+        "$value": "{color.neutral.100}",
+        "$description": ""
+      }
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{color.neutral.500}",
+      "$description": "",
+      "strong": {
+        "$type": "color",
+        "$value": "{color.neutral.600}",
+        "$description": ""
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{color.base.secondary.700}",
+        "$description": ""
+      },
+      "danger": {
+        "$type": "color",
+        "$value": "{color.danger.700}",
+        "$description": ""
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{color.success.700}",
+        "$description": ""
+      }
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "{color.neutral.200}",
+      "$description": "",
+      "weak": {
+        "$type": "color",
+        "$value": "{color.neutral.300}",
+        "$description": ""
+      }
+    },
+    "background": {
+      "$type": "color",
+      "$value": "{color.neutral.100}",
+      "$description": ""
+    },
+    "overlay": {
+      "$type": "color",
+      "$value": "{color.neutral.400}",
+      "$description": ""
+    },
+    "status": {
+      "warning": {
+        "$type": "color",
+        "$value": "{color.base.secondary.900}",
+        "$description": "",
+        "weak": {
+          "$type": "color",
+          "$value": "{color.base.secondary.400}",
+          "$description": ""
+        }
+      },
+      "success": {
+        "weak": {
+          "$type": "color",
+          "$value": "{color.success.400}",
+          "$description": ""
+        },
+        "$type": "color",
+        "$value": "{color.success.700}",
+        "$description": ""
+      },
+      "danger": {
+        "weak": {
+          "$type": "color",
+          "$value": "{color.danger.300}",
+          "$description": ""
+        },
+        "$type": "color",
+        "$value": "{color.danger.700}",
+        "$description": ""
       }
     }
   }

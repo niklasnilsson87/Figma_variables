@@ -1,0 +1,57 @@
+
+/* Foundation */
+:root {
+  --color--gray--50: #ffffff;
+  --color--gray--50: #0000;
+  --color--pink--50: #F7E3ED;
+  --color--pink--100: #ebd6e0;
+  --color--pink--800: #7e105b;
+  --color--pink--900: #6e0e50;
+
+  --color--green--100: #E6F8EA;
+  --color--green--700: #008F32;
+  --font: "Public sans";
+}
+
+/* Semantic light (Kan också vara default läge) */
+:root[light-mode] {
+  --primary--background--deafult: var(--color--pink--900);
+  --primary--background--hover: var(--color--pink--800);
+
+  --function--background--success: var(var(--color--green--100));
+}
+
+/* Semantic dark */
+:root[dark-mode] {
+  --primary--background--deafult: var(--color--pink--50);
+  --primary--background--hover: var(--color--pink--100);
+
+  --function--background--success: var(--color--green--700);
+}
+
+/* Components */
+button {
+  --button--color--background--primary--default: var(--primary--background--deafult);
+  --button--color--background--primary--hover: var(--primary--background--hover);
+
+  background-color: var(--button--color--background--primary--default);
+  font-family: var(--font);
+
+  &:hover {
+    background-color: var(--button--color--background--primary--hover);
+  }
+}
+
+.alert {
+  --alert--color--background: var(--function--background--success);
+  
+  &--success {
+    --_background: var(--function--background--success);
+  }
+  
+  &--error {
+    --_background: var(--function--background--error);
+  }
+  
+  background-color: var(--_background);
+}
